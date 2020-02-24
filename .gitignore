@@ -11,10 +11,10 @@ plugins/*
 
 # Ignore everything in "themes" except the active theme. #
 themes/*
-!themes/inha-theme/
+!themes/inhabitent-theme/
 
 # Ignore packages #
-themes/inha-theme/node_modules/
+themes/inhabitent-theme/node_modules/
 
 # Ignore OS files #
 .DS_Store
