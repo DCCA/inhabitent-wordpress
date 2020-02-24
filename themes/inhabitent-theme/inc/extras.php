@@ -25,3 +25,23 @@ function inhabitent_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'inhabitent_starter_body_classes' );
+
+// Change the logo from logging page
+function inhabitent_starter_set_logo(){
+	echo '
+	<style>
+	.login h1 a{
+		background-image: url(' . get_template_directory_uri() . '/logos/inhabitent-logo-text-dark.svg);
+		background-position: center;
+		background-size: contain;
+		width: auto;
+	}
+	</style>';
+}
+add_action('login_header', 'inhabitent_starter_set_logo');
+
+// Change the URL from the logo
+function inhabitent_starter_set_url_logo(){
+	return get_home_url();
+}
+add_filter('login_headerurl','inhabitent_starter_set_url_logo');
