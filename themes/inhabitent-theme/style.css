@@ -300,7 +300,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #ffffff;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote,
@@ -420,11 +420,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248a83; }
   a:visited {
-    color: purple; }
+    color: #248a83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #248a83; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -670,3 +670,16 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
