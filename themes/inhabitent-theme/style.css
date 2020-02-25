@@ -478,7 +478,8 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    padding: 0 1rem; }
   .main-navigation a {
     display: block;
     text-decoration: none; }

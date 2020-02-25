@@ -45,3 +45,20 @@ function inhabitent_starter_set_url_logo(){
 	return get_home_url();
 }
 add_filter('login_headerurl','inhabitent_starter_set_url_logo');
+
+// Change the logo for the header
+function inhabitent_start_set_menu_logo(){
+	echo '
+	<style>
+	.site-branding .inhabitent-site-logo{
+		display: block;
+		background-image: url(' . get_template_directory_uri() . '/logos/inhabitent-logo-tent.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 3rem;
+		width: 3rem;
+	}
+	</style>';
+}
+add_action('wp_head', 'inhabitent_start_set_menu_logo');
