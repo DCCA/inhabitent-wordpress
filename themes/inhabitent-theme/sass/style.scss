@@ -51,7 +51,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'mixins';
 
 // CSS included in style.css.
-
 @import 'normalize';
 @import 'fonts';
 @import 'typography';
@@ -63,4 +62,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'content';
 @import 'media';
 @import 'page-templates';
+
+// CSS included for specific parts
 @import 'header';

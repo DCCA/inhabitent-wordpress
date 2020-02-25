@@ -32,9 +32,6 @@ function inhabitent_starter_set_logo(){
 	<style>
 	.login h1 a{
 		background-image: url(' . get_template_directory_uri() . '/logos/inhabitent-logo-text-dark.svg);
-		background-position: center;
-		background-size: contain;
-		width: auto;
 	}
 	</style>';
 }
@@ -51,14 +48,20 @@ function inhabitent_start_set_menu_logo(){
 	echo '
 	<style>
 	.site-branding .inhabitent-site-logo{
-		display: block;
-		background-image: url(' . get_template_directory_uri() . '/logos/inhabitent-logo-tent.svg);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-		height: 3rem;
-		width: 3rem;
+		background-image: url(' . get_template_directory_uri() . '/assets/logos/inhabitent-logo-tent.svg);
 	}
 	</style>';
 }
 add_action('wp_head', 'inhabitent_start_set_menu_logo');
+
+// Change the footer background
+function inhabitent_start_set_footer_background(){
+	echo '
+	<style>
+	footer{
+		background-image: url(' . get_template_directory_uri() . '/assets/backgrounds/dark-wood.png);
+	}
+	</style>
+	';
+}
+add_action('wp_footer', 'inhabitent_start_set_footer_background');
