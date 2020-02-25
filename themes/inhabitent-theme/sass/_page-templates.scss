@@ -3,3 +3,9 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+/* Pages */
+.site-content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
