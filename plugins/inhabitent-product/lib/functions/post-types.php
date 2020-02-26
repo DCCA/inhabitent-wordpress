@@ -54,7 +54,13 @@ function inhabitent_cpt_product() {
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
+        'capability_type'       => 'page',
+        'template'              => array(
+            array('core/paragraph', array(
+                'placeholder'   => 'Add Product description...'
+            )),
+        ),
+        'template_lock'         => true,
 		'show_in_rest'          => true,
 	);
 	register_post_type( 'products', $args );

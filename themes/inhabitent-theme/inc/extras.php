@@ -44,13 +44,31 @@ function inhabitent_starter_set_url_logo(){
 add_filter('login_headerurl','inhabitent_starter_set_url_logo');
 
 // Change the logo for the header
+// Add featured image to custom pages like front-page
 function inhabitent_start_set_menu_logo(){
-	echo '
-	<style>
-	.site-branding .inhabitent-site-logo{
-		background-image: url(' . get_template_directory_uri() . '/assets/logos/inhabitent-logo-tent.svg);
-	}
-	</style>';
+	
+	if(is_front_page()){
+		echo '
+		<style>
+		.site-branding .inhabitent-site-logo{
+			background-image: url(' . get_template_directory_uri() . '/assets/logos/inhabitent-logo-tent-white.svg);
+		}
+		.main-navigation a{
+			color: white;
+		}
+		.site-header{
+			background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(' . get_the_post_thumbnail_url() .')
+		</style>
+		';
+	} else{
+		echo '
+		<style>
+		.site-branding .inhabitent-site-logo{
+			background-image: url(' . get_template_directory_uri() . '/assets/logos/inhabitent-logo-tent.svg);
+		}
+		</style>';
+	};
+
 }
 add_action('wp_head', 'inhabitent_start_set_menu_logo');
 
@@ -65,3 +83,18 @@ function inhabitent_start_set_footer_background(){
 	';
 }
 add_action('wp_footer', 'inhabitent_start_set_footer_background');
+
+// Add widgets in the footer area
+function inhabitent_start_footer_widgets() {
+	// Widget code goes here...
+	register_sidebar( array(
+		'name'          => 'Footer',
+		'id'            => 'footer',
+		'description'   => 'Widgets for the footer',
+		'before_widget' => '<section class="footer-area footer-area-one">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	));
+}
+add_action( 'widgets_init', 'inhabitent_start_footer_widgets' );

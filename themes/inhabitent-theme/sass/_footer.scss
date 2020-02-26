@@ -1,0 +1,12 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+  .site-info {
+    display: flex;
+    justify-content: space-between;
+    .widget-footer-area {
+      display: flex;
+    }
+  }
+}

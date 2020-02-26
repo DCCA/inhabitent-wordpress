@@ -3,6 +3,17 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.inhabitent-hero-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.inhabitent-logo-front-page {
+  position: absolute;
+  height: 30vh;
+}
 
 /* Pages */
 .site-content {
