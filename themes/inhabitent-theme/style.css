@@ -306,7 +306,9 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: "Novecento Sans Web", "Arial"; }
+  font-family: "Novecento Sans Web", "Arial";
+  -webkit-margin-before: 0;
+          margin-block-start: 0; }
 
 /* Copy */
 p {
@@ -649,6 +651,11 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.5rem; }
+
 .sticky {
   display: block; }
 
@@ -824,13 +831,51 @@ object {
 # Footer
 --------------------------------------------------------------*/
 footer .site-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  color: white; }
   footer .site-info .widget-footer-area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    footer .site-info .widget-footer-area .footer-area {
+      padding: 0 1.5rem 0 0; }
+      footer .site-info .widget-footer-area .footer-area h4 {
+        color: #d99054;
+        text-transform: uppercase; }
+      footer .site-info .widget-footer-area .footer-area .social-media-icons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+      footer .site-info .widget-footer-area .footer-area a {
+        padding-right: 0.6rem; }
+      footer .site-info .widget-footer-area .footer-area a i {
+        color: white; }
+  footer .site-info .footer-logo-image {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+    footer .site-info .footer-logo-image img {
+      height: 3rem; }
+  footer .site-info .inhabitent-copyright-tag {
+    font-family: "Novecento Sans Web", "Arial";
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%; }
+  footer .site-info .inhabitent-footer-info-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3rem; }

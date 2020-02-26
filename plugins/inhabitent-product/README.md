@@ -5,3 +5,4 @@ Add the product custom post to the Inhabitent Theme
 ## To Do
 
 [ x ] Add custom fonts
+[ ] Style the footer

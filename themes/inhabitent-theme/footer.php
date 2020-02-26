@@ -10,11 +10,16 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<div class="widget-footer-area">
-						<?php dynamic_sidebar( 'footer' ); ?>
+				<div class="site-info container">
+					<div class='inhabitent-footer-info-section'>
+						<div class="widget-footer-area">
+							<?php dynamic_sidebar( 'footer' ); ?>
+						</div>
+						<a href="" class='footer-logo-image'>
+							<img src="<?php echo get_template_directory_uri() . '/assets/logos/inhabitent-logo-text.svg' ?>" alt="">
+						</a>
 					</div>
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+					<p class='inhabitent-copyright-tag'>Copyright &copy 2020 Inhabitent</p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

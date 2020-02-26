@@ -21,7 +21,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class='inhabitent-header-block'>
+				<div class='inhabitent-header-block container'>
 					<div class="site-branding">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inhabitent-site-logo"></a>
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -37,8 +37,8 @@
 						<img src="<?php echo get_template_directory_uri() . '/assets/logos/inhabitent-logo-full.svg' ?>" alt="full-white-tent-logo" class="inhabitent-logo-front-page">
 					</div>
 					</header><!-- #masthead -->
-					<div id="content" class='site-content one-column' >
+					<div id="content" class='site-content container one-column' >
 				<?php else : ?>
 					</header><!-- #masthead -->
-					<div id="content" class='site-content two-column' >
+					<div id="content" class='site-content container two-column' >
 				<?php endif; ?>

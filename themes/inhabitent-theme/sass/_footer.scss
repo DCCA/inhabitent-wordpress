@@ -3,10 +3,45 @@
 --------------------------------------------------------------*/
 footer {
   .site-info {
-    display: flex;
-    justify-content: space-between;
+    color: white;
     .widget-footer-area {
       display: flex;
+      .footer-area {
+        padding: 0 1.5rem 0 0;
+        h4 {
+          color: $color__footer-h4;
+          text-transform: uppercase;
+        }
+        .social-media-icons {
+          display: flex;
+          flex-direction: row;
+        }
+        a {
+          padding-right: 0.6rem;
+        }
+        a i {
+          color: white;
+        }
+      }
+    }
+    .footer-logo-image {
+      align-self: flex-start;
+      img {
+        height: 3rem;
+      }
+    }
+    .inhabitent-copyright-tag {
+      font-family: $font__headings;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+    }
+    .inhabitent-footer-info-section {
+      @include flex-jcenter-acenter;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 3rem;
     }
   }
 }
