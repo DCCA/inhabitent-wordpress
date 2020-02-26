@@ -19,6 +19,7 @@ $color__link: #248a83;
 $color__link-visited: #248a83;
 $color__link-hover: #248a83;
 $color__footer-h4: #d99054;
+$color__brand-green: #248a83;
 
 // Typography
 
@@ -29,3 +30,9 @@ $font__pre: 'Courier 10 Pitch', Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 $font__size: 16px;
+
+// Border
+
+$border__solid: 1px solid #e1e1e1;
+$border__bottom-solid: 0.4rem solid #e1e1e1;
+$border__dashed: 1px dashed #c8c8c8;

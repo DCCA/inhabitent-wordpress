@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 100vh;
 }
 
 .inhabitent-logo-front-page {
@@ -15,10 +15,39 @@
   height: 30vh;
 }
 
+.front-page-section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .inhabitent-journal-post-cards-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   .inhabitent-journal-post-cards {
-    // display: flex;
+    border: $border__solid;
+    .post-thumbnail-img {
+      border-bottom: $border__bottom-solid;
+      height: 14rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin: auto;
+        min-width: 110%;
+      }
+    }
+    .journal-post-wrapper {
+      padding: 1rem;
+      h2 {
+        font-size: 1.5rem;
+        color: $color__brand-green;
+      }
+      .journal-btn {
+        background-color: transparent;
+      }
+    }
   }
 }
 
