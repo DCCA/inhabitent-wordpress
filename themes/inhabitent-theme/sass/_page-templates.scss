@@ -15,6 +15,13 @@
   height: 30vh;
 }
 
+.inhabitent-journal-post-cards-container {
+  display: flex;
+  .inhabitent-journal-post-cards {
+    // display: flex;
+  }
+}
+
 /* Pages */
 .site-content {
   display: grid;
