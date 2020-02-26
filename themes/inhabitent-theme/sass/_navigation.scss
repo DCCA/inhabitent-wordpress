@@ -78,6 +78,9 @@ a {
     float: left;
     position: relative;
     padding: 0 1rem;
+    a {
+      font-family: $font__headings;
+    }
     &:hover > a,
     &.focus > a {
     }

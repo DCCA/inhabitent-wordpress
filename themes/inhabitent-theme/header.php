@@ -36,7 +36,9 @@
 					<div class='inhabitent-hero-banner'>
 						<img src="<?php echo get_template_directory_uri() . '/assets/logos/inhabitent-logo-full.svg' ?>" alt="full-white-tent-logo" class="inhabitent-logo-front-page">
 					</div>
+					</header><!-- #masthead -->
+					<div id="content" class='site-content one-column' >
+				<?php else : ?>
+					</header><!-- #masthead -->
+					<div id="content" class='site-content two-column' >
 				<?php endif; ?>
-
-			</header><!-- #masthead -->
-			<div id="content" class="site-content">

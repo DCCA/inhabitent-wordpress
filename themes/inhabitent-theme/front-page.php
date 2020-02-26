@@ -30,7 +30,7 @@ get_header(); ?>
 						<h1><?php the_title() ?></h1>
 					</div>
 
-				<?php endforeach; wp_reset_postdata(); ?>
+				<?php endforeach; wp_reset_postdata(); ?>     
 			</div>
 
 		</main><!-- #main -->
