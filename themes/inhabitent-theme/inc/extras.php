@@ -60,7 +60,23 @@ function inhabitent_start_set_menu_logo(){
 			background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(' . get_the_post_thumbnail_url() .')
 		</style>
 		';
-	} else{
+	}
+	elseif(is_page('about')){
+		echo '
+		<style>
+		.site-branding .inhabitent-site-logo{
+			background-image: url(' . get_template_directory_uri() . '/assets/logos/inhabitent-logo-tent-white.svg);
+		}
+		.main-navigation a{
+			color: white;
+		}
+		.site-header{
+			background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(' . get_the_post_thumbnail_url() .');
+		}
+		</style>
+		';
+	} 
+	else{
 		echo '
 		<style>
 		.site-branding .inhabitent-site-logo{

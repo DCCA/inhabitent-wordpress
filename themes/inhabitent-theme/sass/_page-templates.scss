@@ -2,14 +2,15 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+// Here banner for Front-page and About-page
 .inhabitent-hero-banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
 }
 
+/* Front page */
 .inhabitent-logo-front-page {
   position: absolute;
   height: 30vh;
@@ -55,4 +56,26 @@
 .two-column {
   display: grid;
   grid-template-columns: 70% 30%;
+}
+
+.page-default {
+  padding-right: 2rem;
+}
+
+/* About */
+.about-page-title h1 {
+  text-transform: uppercase;
+}
+
+.inhabitent-about-page {
+  padding-right: 2rem;
+  h2 {
+    text-align: center;
+  }
+}
+
+/* Find Us */
+.widget-area {
+  border-left: $border__solid;
+  padding-left: 2rem;
 }

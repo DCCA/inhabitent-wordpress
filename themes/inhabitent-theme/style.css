@@ -310,6 +310,9 @@ h6 {
   -webkit-margin-before: 0;
           margin-block-start: 0; }
 
+h1 {
+  font-size: 3rem; }
+
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
@@ -751,7 +754,6 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
 .inhabitent-hero-banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -762,8 +764,9 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh; }
+  height: 90vh; }
 
+/* Front page */
 .inhabitent-logo-front-page {
   position: absolute;
   height: 30vh; }
@@ -807,6 +810,23 @@ object {
   display: grid;
   grid-template-columns: 70% 30%; }
 
+.page-default {
+  padding-right: 2rem; }
+
+/* About */
+.about-page-title h1 {
+  text-transform: uppercase; }
+
+.inhabitent-about-page {
+  padding-right: 2rem; }
+  .inhabitent-about-page h2 {
+    text-align: center; }
+
+/* Find Us */
+.widget-area {
+  border-left: 1px solid #e1e1e1;
+  padding-left: 2rem; }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -837,6 +857,9 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+
+.header-border-bottom {
+  border: 1px solid #e1e1e1; }
 
 .main-navigation {
   width: auto; }
