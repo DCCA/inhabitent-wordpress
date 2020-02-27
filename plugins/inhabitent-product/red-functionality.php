@@ -10,7 +10,8 @@
  * Plugin Name: Inhabitent - Custom Functionality
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
- * Author:      DCCA <dcca12@gmail.com>
+ * Author:      DCCA
+ * Author URI:  https://github.com/DCCA
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */

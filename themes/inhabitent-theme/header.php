@@ -20,7 +20,7 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<?php if (is_page('find-us') or is_home()) : ?>
+			<?php if (is_page('find-us') || is_home()) : ?>
 				<header id="masthead" class="site-header header-border-bottom" role="banner">
 			<?php else : ?>
 				<header id="masthead" class="site-header" role="banner">
@@ -49,7 +49,7 @@
 				</div>
 				</header><!-- #masthead -->
 				<div id="content" class='site-content container one-column' >
-			<?php elseif ( is_page('find-us') or is_home()) : ?>
+			<?php elseif ( is_page('find-us') || is_home()) : ?>
 				</header><!-- #masthead -->
 				<div id="content" class='site-content container-without-top-margin two-column' >	
 			<?php else : ?>
