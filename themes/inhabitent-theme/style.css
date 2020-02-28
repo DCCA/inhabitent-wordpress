@@ -803,6 +803,14 @@ a {
 .container-without-top-margin {
   padding: 0 1.5rem; }
 
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+  border-top: 1px dashed #c8c8c8; }
+
 .sticky {
   display: block; }
 
@@ -1001,6 +1009,69 @@ object {
   .widget-area .widget_archive ul {
     list-style: none;
     margin: 0; }
+
+/* Product Archives */
+.product-archive-title {
+  text-align: center;
+  text-transform: uppercase; }
+
+.products-taxonomies-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0 0 3rem; }
+  .products-taxonomies-list li {
+    padding: 0 2rem;
+    text-transform: uppercase;
+    color: #248a83;
+    font-family: "Novecento Sans Web", "Arial"; }
+  .products-taxonomies-list a:link {
+    text-decoration: none; }
+
+.product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #e1e1e1; }
+  .product-card a {
+    text-decoration: none; }
+  .product-card .product-img-wrapper {
+    height: 12rem;
+    background-position: center;
+    background-size: cover;
+    gap: 2rem;
+    border-bottom: 0.4rem solid #e1e1e1; }
+  .product-card .product-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1rem; }
+    .product-card .product-info h3, .product-card .product-info p {
+      margin: 0;
+      color: #404040; }
 
 /*--------------------------------------------------------------
 # Header

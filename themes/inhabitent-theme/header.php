@@ -23,9 +23,9 @@
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
 
-		<?php if (is_page('find-us') || is_home()) : ?>
+		<?php if (is_page('find-us') || is_home() || is_archive()) : ?>
 			<header id="masthead" class="site-header header-border-bottom" role="banner">
-			<?php else : ?>
+		<?php else : ?>
 				<header id="masthead" class="site-header" role="banner">
 				<?php endif; ?>
 				<div class='inhabitent-header-block header-container'>

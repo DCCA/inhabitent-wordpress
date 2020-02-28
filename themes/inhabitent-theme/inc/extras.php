@@ -61,6 +61,7 @@ function inhabitent_start_set_menu_logo(){
 		</style>
 		';
 	}
+
 	elseif(is_page('about')){
 		echo '
 		<style>
@@ -76,6 +77,7 @@ function inhabitent_start_set_menu_logo(){
 		</style>
 		';
 	} 
+
 	else{
 		echo '
 		<style>
@@ -114,3 +116,17 @@ function inhabitent_start_footer_widgets() {
 	));
 }
 add_action( 'widgets_init', 'inhabitent_start_footer_widgets' );
+
+// Filter the archive title
+function inhabitent_start_remove_archive_from_title(){
+	return post_type_archive_title() . ' stuff';
+}
+add_filter('get_the_archive_title', 'inhabitent_start_remove_archive_from_title');
+
+// Increase the number of pages for product archives page
+function inhabitent_start_product_archives_post_per_page( $query ) {
+	if ( $query->is_archive() && $query->is_main_query() && !is_admin() ) {
+			$query->set( 'posts_per_page', -1 );
+		}
+	}
+add_action( 'pre_get_posts', 'inhabitent_start_product_archives_post_per_page' );

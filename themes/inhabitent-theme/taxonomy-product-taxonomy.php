@@ -16,23 +16,16 @@ get_header(); ?>
 			<header class="page-header">
 				<h1 class="product-archive-title">
 				<?php
-				the_archive_title();
+				    echo single_term_title();
 				?>
-				</h1>
+                </h1>
+                <p>
+                    <?php
+                       echo term_description();
+                    ?>
+                </p>
 			</header><!-- .page-header -->
-			<?php 
-			$taxonomies = get_terms( 'product-taxonomy', array(
-				'hide_empty' => true,
-			) ); ?>
-			<?php if ( $taxonomies ) : ?>
-				<ul class="products-taxonomies-list">
-				<?php foreach ( $taxonomies  as $taxonomy ) : ?>
-					<a href="<?php echo get_term_link($taxonomy); ?>"><li><?php echo $taxonomy->name ?></li></a>
-				<?php endforeach; ?>
-				</ul>
-			<?php endif;?>
 			<?php /* Start the Loop */ ?>
-
 			<div class="product-container">
 				<?php while (have_posts()) : the_post(); ?>
 					<div class="product-card">

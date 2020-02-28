@@ -70,7 +70,7 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost/wordpress'
+    proxy: 'localhost/blog'
   });
 
   gulp.watch(files).on('change', browserSync.reload);

@@ -10,7 +10,7 @@
 function inhabitent_cpt_product() {
 
 	$labels = array(
-		'name'                  => _x( 'Products', 'Post Type General Name', 'text_domain' ),
+		'name'                  => _x( 'Shop', 'Post Type General Name', 'text_domain' ),
 		'singular_name'         => _x( 'Product', 'Post Type Singular Name', 'text_domain' ),
 		'menu_name'             => __( 'Products', 'text_domain' ),
 		'name_admin_bar'        => __( 'Products Type', 'text_domain' ),
@@ -39,7 +39,7 @@ function inhabitent_cpt_product() {
 		'filter_items_list'     => __( 'Filter products list', 'text_domain' ),
 	);
 	$args = array(
-		'label'                 => __( 'Product', 'text_domain' ),
+		'label'                 => __( 'Shop', 'text_domain' ),
 		'description'           => __( 'Products for the shop section', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor' ),

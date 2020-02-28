@@ -24,6 +24,15 @@
   padding: 0 1.5rem;
 }
 
+.product-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+  border-top: $border__dashed;
+}
+
 .sticky {
   display: block;
 }
