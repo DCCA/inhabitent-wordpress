@@ -7,4 +7,5 @@
 - [ ] Build the product taxonomies
 - [ X ] Style the about-page
 - [ ] Style the journal page
-- [ ] Clean the header.php file using templates
+- [ ] Clean the header.php file using template
+- [ ] Organize the plugins files

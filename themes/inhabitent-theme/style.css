@@ -572,7 +572,7 @@ input[type='submit'] {
   border-color: #808080;
   font-family: "Novecento Sans Web", "Arial";
   text-transform: uppercase;
-  background: #e6e6e6;
+  background-color: transparent;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
@@ -795,6 +795,11 @@ a {
   margin: 0 auto;
   padding: 1.5rem; }
 
+.header-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem; }
+
 .container-without-top-margin {
   padding: 0 1.5rem; }
 
@@ -945,6 +950,32 @@ object {
         color: #248a83; }
       .inhabitent-journal-post-cards-container .inhabitent-journal-post-cards .journal-post-wrapper .journal-btn {
         background-color: transparent; }
+
+/* Home */
+.home-content-area {
+  padding: 1.5rem 1.5rem 0 0; }
+
+.home-post-header {
+  position: relative;
+  height: 62vh;
+  background-position: center;
+  background-size: cover; }
+  .home-post-header h2 {
+    padding: 0 1rem;
+    top: 2rem;
+    position: absolute;
+    background-color: #248a83;
+    width: 70%; }
+    .home-post-header h2 a {
+      color: white;
+      text-decoration: none; }
+  .home-post-header .entry-meta {
+    padding: 0 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background-color: #248a83; }
 
 /* Pages */
 .two-column {
