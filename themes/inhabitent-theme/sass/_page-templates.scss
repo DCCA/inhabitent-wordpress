@@ -77,5 +77,9 @@
 /* Find Us */
 .widget-area {
   border-left: $border__solid;
-  padding-left: 2rem;
+  padding: 1.5rem;
+  .widget_archive ul {
+    list-style: none;
+    margin: 0;
+  }
 }

@@ -3,10 +3,19 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
+.site-content {
+  max-width: $width__max-width;
+  margin: 0 auto;
+}
+
 .container {
-  max-width: 1120px;
+  max-width: $width__max-width;
   margin: 0 auto;
   padding: 1.5rem;
+}
+
+.container-without-top-margin {
+  padding: 0 1.5rem;
 }
 
 .sticky {
