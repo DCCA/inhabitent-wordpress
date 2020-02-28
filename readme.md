@@ -12,6 +12,8 @@ Front page
 - [x] Style the about-page
 - [x] Style the journal page
 - [] Insert the dasehd board in the shop area
+Journal Posts
+- [] Style the comments made
 Products
 - [x] Build the product taxonomies
 - [] Fix the margin in the h1 vs h2

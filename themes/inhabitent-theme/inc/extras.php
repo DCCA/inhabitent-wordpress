@@ -46,7 +46,6 @@ add_filter('login_headerurl','inhabitent_starter_set_url_logo');
 // Change the logo for the header
 // Add featured image to custom pages like front-page
 function inhabitent_start_set_menu_logo(){
-	
 	if(is_front_page()){
 		echo '
 		<style>

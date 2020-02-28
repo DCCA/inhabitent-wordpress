@@ -9,7 +9,29 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
+			<h1 class='front-page-section-title'>Shop Stuff</h1>
+
+			<?php 
+			$taxonomies = get_terms( 'product-taxonomy', array(
+				'hide_empty' => true,
+			) ); ?>
+			<?php if ( $taxonomies ) : ?>
+				<div class="products-taxonomies-front">
+				<?php foreach ( $taxonomies  as $taxonomy ) : ?>
+					<a href="<?php echo get_term_link($taxonomy); ?>">
+					<img src="<?php echo get_template_directory_uri() . '/assets/product-type-icons/' . $taxonomy->slug . '.svg'?>" alt=""> 
+					<p> 
+	                   <?php echo $taxonomy->description; ?>
+					</p>
+					<h2><?php echo $taxonomy->name ?></h2>
+					</a>
+				<?php endforeach; ?>
+				</div>
+			<?php endif;?>
+
 		
+			<h1 class='front-page-section-title'>Inhabitent Journal</h1>
 			<?php
 				$args = array( 
 					'post_type'      => 'post', 
@@ -18,10 +40,6 @@ get_header(); ?>
 				$journal_posts = get_posts( $args ); // returns an array of posts
 			
 			?>
-
-			<h1 class='front-page-section-title'>Shop Stuff</h1>
-
-			<h1 class='front-page-section-title'>Inhabitent Journal</h1>
 
 			<div class='inhabitent-journal-post-cards-container'>
 				<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>

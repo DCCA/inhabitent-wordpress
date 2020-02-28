@@ -960,6 +960,24 @@ object {
   text-align: center;
   text-transform: uppercase; }
 
+.products-taxonomies-front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+  .products-taxonomies-front a {
+    padding: 1rem;
+    text-decoration: none;
+    margin: 2rem;
+    border: 1px solid #e1e1e1;
+    color: black; }
+
 .inhabitent-journal-post-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

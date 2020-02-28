@@ -21,6 +21,20 @@
   text-transform: uppercase;
 }
 
+.products-taxonomies-front{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  a{
+    padding: 1rem;
+    text-decoration: none;
+    margin: 2rem;
+    border: $border__solid;
+    color: black;
+  }
+}
+
 .inhabitent-journal-post-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
