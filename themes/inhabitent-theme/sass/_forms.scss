@@ -8,12 +8,11 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  border: solid 1.5px;
-  border-color: #808080;
+  border: none;
   font-family: $font__headings;
   text-transform: uppercase;
-  background-color: transparent;
-  color: rgba(0, 0, 0, 0.8);
+  background-color: $color__brand-green;
+  color: white;
   @include font-size(0.75);
   line-height: 1;
   padding: 0.6rem 1rem 0.4rem;
@@ -42,11 +41,15 @@ input[type='password'],
 input[type='search'],
 textarea {
   color: #666;
+  background-color: $color__background-light-grey;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  // border-radius: 3px;
 
   &:focus {
     color: #111;
+  }
+  label{
+    text-transform: uppercase;
   }
 }
 

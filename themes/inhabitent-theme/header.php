@@ -54,7 +54,7 @@
 			<?php elseif (is_archive() || is_single() && 'products' == get_post_type() ) : ?>
 				</header><!-- #masthead -->
 				<div id="content" class='site-content container one-column'>
-			<?php elseif (is_page('find-us') || is_home()) : ?>
+			<?php elseif (is_page('find-us') || is_home() || is_single()) : ?>
 				</header><!-- #masthead -->
 				<div id="content" class='site-content container-without-top-margin two-column'>
 			<?php else : ?>

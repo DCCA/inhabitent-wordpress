@@ -70,6 +70,39 @@
 
 /* Comments */
 
+.comment-form{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 2rem;
+  border-radius: 0;
+  p{
+    grid-column: span 4;
+    input{
+      width: 100%;
+      &[type='checkbox']{
+        width: auto;
+      }
+      &[type='submit']{
+        width: auto;
+      }
+    }
+    label{
+      text-transform: uppercase;
+      font-family: $font__headings ;
+    }
+  }
+  .comment-form-author, .comment-form-email{
+    grid-column: span 2;
+  }
+}
+
+.comments-area{
+  margin: 3rem 0;
+  h3{
+    font-size: 2rem;
+  }
+}
+
 .comment-content a {
   word-wrap: break-word;
 }

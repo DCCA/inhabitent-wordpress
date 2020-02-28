@@ -21,26 +21,20 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while (have_posts()) : the_post(); ?>
-
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<article id="post-<?php the_ID(); ?>" <?php post_class('journal-posts'); ?>>
 					<header class="entry-header home-post-header" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
+						<a href="<?php echo get_post_permalink();?>" class='journal-image-link'></a>
 						<?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
-
-						<?php if (has_post_thumbnail()) : ?>
-							<!-- <img class='home-post-thumbnail' src="<?php echo get_the_post_thumbnail_url(); ?>" alt=""> -->
-						<?php endif; ?>
-
 						<?php if ('post' === get_post_type()) : ?>
 							<div class="entry-meta">
 								<?php inhabitent_starter_posted_on(); ?> / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?> / <?php inhabitent_starter_posted_by(); ?>
 							</div><!-- .entry-meta -->
 						<?php endif; ?>
 					</header><!-- .entry-header -->
-
 					<div class="entry-content">
 						<?php the_excerpt(); ?>
 					</div><!-- .entry-content -->
-					<button class="journal-btn">Read More</button>
+					<a href='<?php echo get_post_permalink();?>' class="journal-btn">Read More</a>
 				</article><!-- #post-## -->
 
 			<?php endwhile; ?>
