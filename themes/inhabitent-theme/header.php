@@ -52,10 +52,13 @@
 					</div>
 			</header><!-- #masthead -->
 			<div id="content" class='site-content container one-column'>
-			<?php elseif (is_page('find-us') || is_home()) : ?>
+			<?php elseif (is_archive()) : ?>
 				</header><!-- #masthead -->
-				<div id="content" class='site-content container-without-top-margin two-column'>
-				<?php else : ?>
+				<div id="content" class='site-content container one-column'>
+				<?php elseif (is_page('find-us') || is_home()) : ?>
 					</header><!-- #masthead -->
-					<div id="content" class='site-content container two-column'>
-					<?php endif; ?>
+					<div id="content" class='site-content container-without-top-margin two-column'>
+					<?php else : ?>
+						</header><!-- #masthead -->
+						<div id="content" class='site-content container two-column'>
+						<?php endif; ?>
