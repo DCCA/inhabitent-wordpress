@@ -164,3 +164,43 @@
     }
   }
 }
+
+/* Products Taxonomy*/
+.product-taxonomy-header{
+  p{
+    text-align: center;
+  }
+}
+
+/* Single Product */
+.single-product-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 0 0 7rem;
+  .single-product-price{
+    font-size: 1.8rem;
+    font-family: $font__headings;
+  }
+  h1{
+    color: $color__brand-orange;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .single-product-img-wrapper{
+    background-position: center;
+    background-size: cover;
+  }
+  .single-product-social-media{
+    display: flex;
+    a{
+      margin-right: .2rem;
+      padding: .4rem 1.4rem;
+      border: $border__solid;
+      color: $color__text-main;
+      &:link{
+        text-decoration: none;
+      }
+    }
+  }
+}

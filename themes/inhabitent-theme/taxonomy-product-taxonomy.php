@@ -13,7 +13,7 @@ get_header(); ?>
 
 		<?php if (have_posts()) : ?>
 
-			<header class="page-header">
+			<header class="page-header product-taxonomy-header">
 				<h1 class="product-archive-title">
 				<?php
 				    echo single_term_title();
