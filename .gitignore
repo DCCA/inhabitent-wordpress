@@ -10,6 +10,7 @@
 plugins/*
 !plugins/inhabitent-product
 !plugins/inhabitent-widget
+!plugins/inhabitent-contact
 
 # Ignore everything in "themes" except the active theme. #
 themes/*
