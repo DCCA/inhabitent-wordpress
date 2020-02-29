@@ -20,11 +20,11 @@ get_header(); ?>
 				<div class="products-taxonomies-front">
 				<?php foreach ( $taxonomies  as $taxonomy ) : ?>
 					<a href="<?php echo get_term_link($taxonomy); ?>">
-					<img src="<?php echo get_template_directory_uri() . '/assets/product-type-icons/' . $taxonomy->slug . '.svg'?>" alt=""> 
+					<img class='front-page-taxonomies-icons' src="<?php echo get_template_directory_uri() . '/assets/product-type-icons/' . $taxonomy->slug . '.svg'?>" alt="<?php echo $taxonomy->slug ?>"> 
 					<p> 
 	                   <?php echo $taxonomy->description; ?>
 					</p>
-					<h2><?php echo $taxonomy->name ?></h2>
+					<button> <h3> <?php echo $taxonomy->name . ' stuff' ?> </h3> </button>
 					</a>
 				<?php endforeach; ?>
 				</div>
@@ -43,17 +43,15 @@ get_header(); ?>
 
 			<div class='inhabitent-journal-post-cards-container'>
 				<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-					
 					<div class='inhabitent-journal-post-cards'>
 						<?php if ( has_post_thumbnail() ) : ?>
-							<div class="post-thumbnail-img">
-								<?php the_post_thumbnail(); ?>
+							<div class="post-thumbnail-img" style='background-image: url(<?php echo get_the_post_thumbnail_url()?>)'>
 							</div> 
 						<?php endif; ?>
 						<div class="journal-post-wrapper">
 							<p><?php echo get_the_date() . ' / ' . get_comments_number() . ' Comments'?></p>
 							<h2><?php the_title() ?></h2>
-							<button class='journal-btn'>Read Entry</button>
+							<a href="" class='journal-btn'>Read More</a>
 						</div>
 					</div>
 
