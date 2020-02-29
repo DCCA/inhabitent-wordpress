@@ -6,6 +6,10 @@ All
 - [] Organize the plugins files
 - [x] Add custom fonts
 - [x] Style the footer
+Menu
+-[] Insert the search bar with effect in the menu
+Search
+-[] Style the Search Results page
 Front page
 - [x] Style the front-page journal
 - [] Style the front-page product area

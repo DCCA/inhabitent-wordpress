@@ -473,7 +473,13 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -1039,6 +1045,14 @@ a.journal-btn {
 
 .main-navigation {
   width: auto; }
+  .main-navigation button.search-submit {
+    background-color: transparent; }
+    .main-navigation button.search-submit:hover {
+      border-color: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+  .main-navigation .icon-search {
+    color: #248a83; }
 
 .login h1 a {
   background-position: center;
