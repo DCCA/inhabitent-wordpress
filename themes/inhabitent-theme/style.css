@@ -1067,6 +1067,16 @@ a.journal-btn {
 .search-results .entry-title a {
   text-decoration: none; }
 
+.post-category-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase; }
+  .post-category-meta p {
+    padding-right: 1rem; }
+  .post-category-meta a {
+    text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/

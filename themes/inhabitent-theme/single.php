@@ -26,7 +26,27 @@ get_header(); ?>
 						<?php the_content(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
-				
+				<div class="post-category-meta">
+					<!-- TODO: Add commas beteween the space, and trim the last one -->
+					<?php
+						$categorys = get_the_category();
+						echo '<p>POSTED IN → ';
+						foreach ($categorys as $category) {
+							echo '<a href=' . get_category_link($category) . '>' . $category->slug . '</a>';
+							echo ' ';
+						}
+						echo '</p>';
+					?>
+					<?php
+						$tags = get_the_tags();
+						echo '<p>TAGGED IN → ';
+						foreach ($tags as $tag) {
+							echo '<a href='. get_tag_link($tag) .'>' . $tag->slug. '</a>';
+							echo ' ';
+						}
+						echo '</p>';
+					?>
+				</div>
 				<div class='single-product-social-media'>
 					<a href='#'><i class="fab fa-facebook-f"></i> Like</a>
 					<a href='#'><i class="fab fa-twitter"></i> Twitter</a>

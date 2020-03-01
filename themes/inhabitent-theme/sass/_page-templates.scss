@@ -259,3 +259,16 @@ a.journal-btn {
     }
   }
 }
+
+// Single Journal Post
+.post-category-meta{
+  display: flex;
+  text-transform: uppercase;
+  p{
+    padding-right: 1rem;
+  }
+  a{
+    // margin-right: 1rem;
+    text-decoration: none;
+  }
+}
