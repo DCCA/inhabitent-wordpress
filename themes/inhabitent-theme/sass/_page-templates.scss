@@ -133,9 +133,26 @@ a.inhabitant-line-btn {
 }
 
 /* Pages */
-.two-column {
-  display: grid;
-  grid-template-columns: 70% 30%;
+.page-template-default,
+.blog,
+.post-template-default,
+.archive,
+.search,
+.error404{
+  .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+}
+
+.post-type-archive-products,
+.page-about,
+.page-home,
+.tax-product-taxonomy {
+    .site-content{
+    display: block;
+    grid-template-columns: 70% 30%;
+  }
 }
 
 .page-default {
@@ -143,6 +160,12 @@ a.inhabitant-line-btn {
 }
 
 /* About */
+.inhabitent-hero-banner{
+  h1{
+    color: white;
+  }
+}
+
 .about-page-title h1 {
   text-transform: uppercase;
 }

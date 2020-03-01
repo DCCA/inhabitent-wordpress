@@ -17,8 +17,17 @@
   }
 }
 
-.header-border-bottom {
-  border: $border__solid;
+.page-template-default,
+.blog,
+.archive,
+.post-template-default,
+.search,
+.error404,
+.tax-product-taxonomy,
+.products-template-default {
+  .site-header {
+    border: $border__solid;
+  }
 }
 
 .main-navigation {

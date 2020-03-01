@@ -1,7 +1,7 @@
 ## To Do
 
 Major issues
-- [] Add the styles for the archive page
+- [x] Add the styles for the archive page
 
 All
 - [] Fix the if statement for the border bottom in the header
@@ -18,15 +18,15 @@ Search
 
 Front page
 - [x] Style the front-page journal
-- [] Style the front-page product area
+- [x] Style the front-page product area
 - [x] Style the about-page
 - [x] Style the journal page
-- [] Insert the dasehd board in the shop area
+- [] Insert the dashed line in the shop area
 
 Journal Posts
 - [] Style the comments made
-- [] Insert the categorys at the bottom of the single posts page
+- [x] Insert the categorys tags at the bottom of the single posts page
 
 Products
 - [x] Build the product taxonomies
-- [] Fix the margin in the h1 vs h2
+- [x] Fix the margin in the h1 vs h2

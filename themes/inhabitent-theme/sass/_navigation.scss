@@ -93,10 +93,16 @@ a {
     text-decoration: none;
     text-transform: uppercase;
   }
-
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a {
+  }
+}
+
+.home,
+.page-about {
+  .main-navigation a{
+  color: white;
   }
 }
 

@@ -564,6 +564,10 @@ a {
     text-decoration: none;
     text-transform: uppercase; }
 
+.home .main-navigation a,
+.page-about .main-navigation a {
+  color: white; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -683,8 +687,16 @@ a {
   margin: 0 auto;
   padding: 0 1.5rem; }
 
-.container-without-top-margin {
+.page-template-default .site-content,
+.search .site-content,
+.error404 .site-content,
+.archive .site-content,
+.post-template-default .site-content {
   padding: 0 1.5rem; }
+
+.post-type-archive-products .site-content,
+.tax-product-taxonomy .site-content {
+  padding: 1.5rem; }
 
 .product-container {
   display: grid;
@@ -947,14 +959,29 @@ a.inhabitant-line-btn {
     background-color: #248a83; }
 
 /* Pages */
-.two-column {
+.page-template-default .site-content,
+.blog .site-content,
+.post-template-default .site-content,
+.archive .site-content,
+.search .site-content,
+.error404 .site-content {
   display: grid;
+  grid-template-columns: 70% 30%; }
+
+.post-type-archive-products .site-content,
+.page-about .site-content,
+.page-home .site-content,
+.tax-product-taxonomy .site-content {
+  display: block;
   grid-template-columns: 70% 30%; }
 
 .page-default {
   padding-right: 2rem; }
 
 /* About */
+.inhabitent-hero-banner h1 {
+  color: white; }
+
 .about-page-title h1 {
   text-transform: uppercase; }
 
@@ -1127,7 +1154,14 @@ a.inhabitant-line-btn {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
-.header-border-bottom {
+.page-template-default .site-header,
+.blog .site-header,
+.archive .site-header,
+.post-template-default .site-header,
+.search .site-header,
+.error404 .site-header,
+.tax-product-taxonomy .site-header,
+.products-template-default .site-header {
   border: 1px solid #e1e1e1; }
 
 .main-navigation {
@@ -1174,7 +1208,8 @@ footer .site-info {
         color: white; }
   footer .site-info .footer-logo-image {
     -ms-flex-item-align: start;
-        align-self: flex-start; }
+        align-self: flex-start;
+    margin-top: 1.5rem; }
     footer .site-info .footer-logo-image img {
       height: 3rem; }
   footer .site-info .inhabitent-copyright-tag {
