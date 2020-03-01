@@ -150,6 +150,7 @@ a.journal-btn {
   border-left: $border__solid;
   padding: 1.5rem;
   .widget_archive ul {
+    text-decoration: none;
     list-style: none;
     margin: 0;
   }

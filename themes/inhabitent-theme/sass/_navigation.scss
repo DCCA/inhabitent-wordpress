@@ -6,8 +6,9 @@
 
 a {
   color: $color__link;
-
+  text-decoration: none;
   &:visited {
+    text-decoration: none;
     color: $color__link-visited;
   }
   &:hover,

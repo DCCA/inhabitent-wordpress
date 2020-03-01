@@ -508,11 +508,13 @@ a {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #248a83; }
+  color: #248a83;
+  text-decoration: none; }
   a:visited {
+    text-decoration: none;
     color: #248a83; }
   a:hover, a:focus, a:active {
-    color: #248a83; }
+    color: #404040; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -962,6 +964,7 @@ a.journal-btn {
   border-left: 1px solid #e1e1e1;
   padding: 1.5rem; }
   .widget-area .widget_archive ul {
+    text-decoration: none;
     list-style: none;
     margin: 0; }
 
