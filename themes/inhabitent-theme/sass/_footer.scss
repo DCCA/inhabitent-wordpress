@@ -6,6 +6,10 @@ footer {
     color: white;
     .widget-footer-area {
       display: flex;
+      i{
+        padding-right: .6rem;
+        line-height: $font__line-height-body;
+      }
       .footer-area {
         padding: 0 1.5rem 0 0;
         h4 {
@@ -18,6 +22,7 @@ footer {
         }
         a {
           padding-right: 0.6rem;
+          color: white;
         }
         a i {
           color: white;
@@ -45,5 +50,22 @@ footer {
       margin-bottom: 3rem;
 
     }
+  }
+}
+
+.widget-area {
+  border-left: $border__solid;
+  padding: 1.5rem;
+  .widget_archive ul {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+  }
+  i {
+    padding-right: 1rem;
+    line-height: $font__line-height-body;
+  }
+  p{
+    display: flex;
   }
 }

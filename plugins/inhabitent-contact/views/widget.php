@@ -1,10 +1,16 @@
 <!-- This file is used to markup the public-facing widget. -->
 <div class="text-widget">
     <?php if (strlen(trim($email)) > 0) : ?>
-        <p><i class="fas fa-envelope"></i> <?php echo $email; ?></p>
+        <p>
+            <i class="fas fa-envelope"></i> 
+            <a href="mailto:<?php echo $email; ?>"> <?php echo $email; ?> </a>
+        </p>
     <?php endif; ?>
     <?php if (strlen(trim($telephone)) > 0) : ?>
-        <p><i class="fas fa-phone-alt"></i> <?php echo $telephone; ?></p>
+        <p>
+            <i class="fas fa-phone-alt"></i> 
+            <a href="tel:<?php echo $telephone; ?>"> <?php echo $telephone; ?></a>
+        </p>
     <?php endif; ?>
     <?php if (strlen(trim($address)) > 0) : ?>
         <p><i class="fas fa-map-marker-alt"></i> <?php echo $address; ?></p>

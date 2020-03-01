@@ -186,6 +186,13 @@ a.inhabitant-line-btn {
     list-style: none;
     margin: 0;
   }
+  i {
+    padding-right: 1rem;
+    line-height: $font__line-height-body;
+  }
+  p{
+    display: flex;
+  }
 }
 
 /* Product Archives */
