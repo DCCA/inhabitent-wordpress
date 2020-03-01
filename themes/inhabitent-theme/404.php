@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main home-content-area" role="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -20,7 +20,9 @@ get_header(); ?>
 				<div class="page-content">
 					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
 
+					<div class="searchform-wrapper-404">
 					<?php get_search_form(); ?>
+					</div>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
@@ -51,5 +53,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

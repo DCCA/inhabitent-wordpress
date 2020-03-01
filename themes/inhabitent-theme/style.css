@@ -260,7 +260,7 @@ h6 {
           margin-block-start: 0;
   font-weight: 900;
   line-height: 1.5;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
   text-transform: uppercase; }
 
 h1 {
@@ -268,6 +268,9 @@ h1 {
 
 h2 {
   font-size: 2rem; }
+
+.widget h2 {
+  font-size: 1.5rem; }
 
 /* Copy */
 p {
@@ -351,12 +354,8 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul,
-ol {
-  margin: 0 0 1.5rem 3rem; }
-
 ul {
-  list-style: disc; }
+  list-style: none; }
 
 ol {
   list-style: decimal; }
@@ -424,7 +423,7 @@ input[type='url'],
 input[type='password'],
 textarea {
   color: #666;
-  background-color: #eaeaea;
+  background-color: #f4f4f4;
   border: 1px solid #ccc; }
   input[type='text']:focus,
   input[type='email']:focus,
@@ -673,18 +672,18 @@ a {
 --------------------------------------------------------------*/
 /* Posts and pages */
 .site-content {
-  max-width: 1120px;
+  width: 1120px;
   margin: 0 auto; }
 
 .container {
-  max-width: 1120px;
+  width: 1120px;
   margin: 0 auto;
   padding: 1.5rem; }
 
 .header-container {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 0.5rem 1.5rem; }
+  padding: 0 1.5rem; }
 
 .container-without-top-margin {
   padding: 0 1.5rem; }
@@ -1079,6 +1078,15 @@ a.journal-btn {
     padding-right: 1rem; }
   .post-category-meta a {
     text-decoration: none; }
+
+.searchform-wrapper-404 a {
+  display: none; }
+
+.searchform-wrapper-404 input[type=search] {
+  width: 14rem;
+  padding: .4rem;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1; }
 
 /*--------------------------------------------------------------
 # Header

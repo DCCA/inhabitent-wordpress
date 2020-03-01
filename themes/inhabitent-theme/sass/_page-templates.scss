@@ -273,3 +273,16 @@ a.journal-btn {
     text-decoration: none;
   }
 }
+
+// 404 page 
+.searchform-wrapper-404{
+  a{
+    display: none;
+  }
+  input[type=search]{
+    width: 14rem;
+    padding: .4rem;
+    background-color: $color__background-light-grey;
+    border: $border__solid;
+  }
+}

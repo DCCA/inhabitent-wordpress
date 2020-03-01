@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
-		<?php if (is_page('find-us') || is_home() || is_archive() || is_single() || is_search()): ?>
+		<?php if (is_page('find-us') || is_home() || is_archive() || is_single() || is_search() || is_404() ): ?>
 			<header id="masthead" class="site-header header-border-bottom" role="banner">
 		<?php else : ?>
 				<header id="masthead" class="site-header header-with-hero" role="banner">
@@ -55,7 +55,7 @@
 			<?php elseif ((is_archive() || is_single()) && 'products' == get_post_type() ) : ?>
 				</header><!-- #masthead -->
 				<div id="content" class='site-content container one-column'>
-			<?php elseif (is_page('find-us') || is_home() || is_single() || is_search() || is_archive()) : ?>
+			<?php elseif (is_page('find-us') || is_home() || is_single() || is_search() || is_archive() || is_404()) : ?>
 				</header><!-- #masthead -->
 				<div id="content" class='site-content container-without-top-margin two-column'>
 			<?php else : ?>
