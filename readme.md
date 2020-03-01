@@ -7,9 +7,9 @@ All
 - [x] Add custom fonts
 - [x] Style the footer
 Menu
--[] Insert the search bar with effect in the menu
+- [x] Insert the search bar with effect in the menu
 Search
--[] Style the Search Results page
+- [x] Style the Search Results page
 Front page
 - [x] Style the front-page journal
 - [] Style the front-page product area
@@ -18,6 +18,7 @@ Front page
 - [] Insert the dasehd board in the shop area
 Journal Posts
 - [] Style the comments made
+- [] Insert the categorys at the bottom of the single posts page
 Products
 - [x] Build the product taxonomies
 - [] Fix the margin in the h1 vs h2

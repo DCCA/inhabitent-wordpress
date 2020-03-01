@@ -452,10 +452,38 @@ textarea {
 
 input[type='search'] {
   background-color: transparent;
-  border: none; }
+  border: none;
+  font-family: "Novecento Sans Web", "Arial";
+  padding: 0 .4rem 0 1rem;
+  color: #666; }
+  input[type='search']::-webkit-input-placeholder {
+    color: #666; }
+  input[type='search']::-moz-placeholder {
+    color: #666; }
+  input[type='search']:-ms-input-placeholder {
+    color: #666; }
+  input[type='search']::-ms-input-placeholder {
+    color: #666; }
+  input[type='search']::placeholder {
+    color: #666; }
 
-.main-navigation .search-form a {
-  display: inline; }
+.main-navigation .search-form
+a {
+  display: inline;
+  padding: 0 1rem; }
+
+.header-with-hero .search-form input[type='search'] {
+  color: #f0e4d1; }
+  .header-with-hero .search-form input[type='search']::-webkit-input-placeholder {
+    color: #f0e4d1; }
+  .header-with-hero .search-form input[type='search']::-moz-placeholder {
+    color: #f0e4d1; }
+  .header-with-hero .search-form input[type='search']:-ms-input-placeholder {
+    color: #f0e4d1; }
+  .header-with-hero .search-form input[type='search']::-ms-input-placeholder {
+    color: #f0e4d1; }
+  .header-with-hero .search-form input[type='search']::placeholder {
+    color: #f0e4d1; }
 
 .search-field-hidden {
   -webkit-transition-duration: 1s;
@@ -473,7 +501,7 @@ input[type='search'] {
   transition-property: all;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
-  width: 10rem; }
+  width: 15rem; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -1033,6 +1061,12 @@ a.journal-btn {
     .single-product-social-media a:link {
       text-decoration: none; }
 
+.search-results .page-title {
+  border-bottom: 1px solid #e1e1e1; }
+
+.search-results .entry-title a {
+  text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1069,14 +1103,6 @@ a.journal-btn {
 
 .main-navigation {
   width: auto; }
-  .main-navigation button.search-submit {
-    background-color: transparent; }
-    .main-navigation button.search-submit:hover {
-      border-color: none;
-      -webkit-box-shadow: none;
-              box-shadow: none; }
-  .main-navigation .icon-search {
-    color: #248a83; }
 
 .login h1 a {
   background-position: center;

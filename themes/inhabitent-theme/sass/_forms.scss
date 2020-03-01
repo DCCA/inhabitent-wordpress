@@ -67,10 +67,29 @@ textarea {
 input[type='search']{
   background-color: transparent;
   border: none;
+  font-family: $font__headings;
+  padding: 0 .4rem 0 1rem;
+  color: $color__brand-light-grey;
+  &::placeholder {
+    color: $color__brand-light-grey;
+  }
 }
 
-.main-navigation .search-form a{
+.main-navigation .search-form 
+  a{
   display: inline;
+  padding: 0 1rem;
+}
+
+.header-with-hero{
+  .search-form {
+    input[type='search']{
+      color: $color__brand-yellow;
+      &::placeholder {
+        color: $color__brand-yellow;
+      }
+    }
+  }
 }
 
 .search-field-hidden{
@@ -84,5 +103,5 @@ input[type='search']{
   transition-duration: 1s;
   transition-property: all;
   transition-timing-function: ease-in-out;
-  width: 10rem;
+  width: 15rem;
 }

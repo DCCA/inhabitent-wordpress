@@ -23,18 +23,6 @@
 
 .main-navigation {
   width: auto;
-  button{
-    &.search-submit{
-      background-color: transparent;
-      &:hover{
-        border-color: none;
-        box-shadow: none;
-      }
-    }
-  }
-  .icon-search{
-    color: $color__brand-green;
-  }
 }
 
 .login h1 a {

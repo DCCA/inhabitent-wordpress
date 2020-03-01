@@ -22,12 +22,11 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
-
-		<?php if (is_page('find-us') || is_home() || is_archive() || is_single()): ?>
+		<?php if (is_page('find-us') || is_home() || is_archive() || is_single() || is_search()): ?>
 			<header id="masthead" class="site-header header-border-bottom" role="banner">
 		<?php else : ?>
-				<header id="masthead" class="site-header" role="banner">
-				<?php endif; ?>
+				<header id="masthead" class="site-header header-with-hero" role="banner">
+		<?php endif; ?>
 				<div class='inhabitent-header-block header-container'>
 					<div class="site-branding">
 						<a href="<?php echo esc_url(home_url('/')); ?>" class="inhabitent-site-logo"></a>
@@ -40,6 +39,7 @@
 						<?php get_search_form(); ?>
 					</nav><!-- #site-navigation -->
 				</div>
+				
 			<?php if (is_front_page()) : ?>
 				<div class='inhabitent-hero-banner'>
 					<img src="<?php echo get_template_directory_uri() . '/assets/logos/inhabitent-logo-full.svg' ?>" alt="full-white-tent-logo" class="inhabitent-logo-front-page">
@@ -55,7 +55,7 @@
 			<?php elseif (is_archive() || is_single() && 'products' == get_post_type() ) : ?>
 				</header><!-- #masthead -->
 				<div id="content" class='site-content container one-column'>
-			<?php elseif (is_page('find-us') || is_home() || is_single()) : ?>
+			<?php elseif (is_page('find-us') || is_home() || is_single() || is_search()) : ?>
 				</header><!-- #masthead -->
 				<div id="content" class='site-content container-without-top-margin two-column'>
 			<?php else : ?>

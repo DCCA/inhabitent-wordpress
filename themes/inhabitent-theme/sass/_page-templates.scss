@@ -247,3 +247,15 @@ a.journal-btn {
     }
   }
 }
+
+// Search bar
+.search-results{
+  .page-title{
+    border-bottom: $border__solid;
+  }
+  .entry-title{
+    a{
+      text-decoration: none;
+    }
+  }
+}
