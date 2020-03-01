@@ -117,10 +117,15 @@ function inhabitent_start_footer_widgets() {
 add_action( 'widgets_init', 'inhabitent_start_footer_widgets' );
 
 // Filter the archive title
-function inhabitent_start_remove_archive_from_title(){
-	return post_type_archive_title() . ' stuff';
+function inhabitent_start_remove_archive_from_title($title){
+	if('products' == get_post_type()){
+		$title = post_type_archive_title() . ' stuff';
+		return $title;
+	} else{
+		return $title;
+	}
 }
-//add_filter('get_the_archive_title', 'inhabitent_start_remove_archive_from_title');
+add_filter('get_the_archive_title', 'inhabitent_start_remove_archive_from_title');
 
 // Increase the number of pages for product archives page
 function inhabitent_start_product_archives_post_per_page( $query ) {

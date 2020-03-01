@@ -35,7 +35,7 @@ get_header(); ?>
 			<div class="entry-content">
 						<?php the_excerpt(); ?>
 					</div><!-- .entry-content -->
-					<a href='<?php echo get_post_permalink();?>' class="journal-btn">Read More</a>
+					<a href='<?php echo get_post_permalink();?>' class="inhabitant-line-btn">Read More</a>
 					</article><!-- #post-## -->
 
 			<?php endwhile; ?>

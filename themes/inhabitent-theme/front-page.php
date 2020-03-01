@@ -40,7 +40,6 @@ get_header(); ?>
 				$journal_posts = get_posts( $args ); // returns an array of posts
 			
 			?>
-
 			<div class='inhabitent-journal-post-cards-container'>
 				<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 					<div class='inhabitent-journal-post-cards'>
@@ -50,8 +49,8 @@ get_header(); ?>
 						<?php endif; ?>
 						<div class="journal-post-wrapper">
 							<p><?php echo get_the_date() . ' / ' . get_comments_number() . ' Comments'?></p>
-							<h2><?php the_title() ?></h2>
-							<a href="" class='journal-btn'>Read More</a>
+							<h2><a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a></h2>
+							<a href="<?php echo get_permalink(); ?>" class='inhabitant-line-btn'>Read More</a>
 						</div>
 					</div>
 

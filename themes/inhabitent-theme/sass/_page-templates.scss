@@ -33,6 +33,10 @@
     margin: 0 0.4rem;
     border: $border__solid;
     border-top: $border__bottom-solid;
+    &:hover{
+      border: $border__solid-orange;
+      border-top: $border__bottom-solid-orange;
+    }
     color: black;
     font-size: 1.1rem;
     .front-page-taxonomies-icons{
@@ -80,7 +84,7 @@
 .home-content-area {
   padding: 1.5rem 1.5rem 0 0;
 }
-a.journal-btn {
+a.inhabitant-line-btn {
   margin-right: .2rem;
   padding: .4rem 1.4rem;
   border: $border__solid;
@@ -89,6 +93,11 @@ a.journal-btn {
   font-family: $font__headings;
   &:link{
     text-decoration: none;
+  }
+  &:hover{
+    background-color: $color__background-green;
+    border: $border__solid-green;
+    color: white;
   }
 }
 
@@ -203,6 +212,10 @@ a.journal-btn {
     h3, p {
       margin: 0;
       color: $color__text-main;
+      font-family: $font__main;
+      font-size: .8rem;
+      text-transform: initial;
+
     }
   }
 }

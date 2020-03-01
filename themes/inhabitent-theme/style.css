@@ -402,9 +402,7 @@ input[type='submit'] {
   input[type='button']:hover,
   input[type='reset']:hover,
   input[type='submit']:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    background-color: #19625d; }
   button:active, button:focus,
   input[type='button']:active,
   input[type='button']:focus,
@@ -860,6 +858,9 @@ iframe {
     border-top: 0.4rem solid #e1e1e1;
     color: black;
     font-size: 1.1rem; }
+    .products-taxonomies-front a:hover {
+      border: 1px solid #d99054;
+      border-top: 0.4rem solid #d99054; }
     .products-taxonomies-front a .front-page-taxonomies-icons {
       height: 6rem;
       margin: 1rem; }
@@ -905,15 +906,19 @@ iframe {
 .home-content-area {
   padding: 1.5rem 1.5rem 0 0; }
 
-a.journal-btn {
+a.inhabitant-line-btn {
   margin-right: .2rem;
   padding: .4rem 1.4rem;
   border: 1px solid #e1e1e1;
   color: #404040;
   text-transform: uppercase;
   font-family: "Novecento Sans Web", "Arial"; }
-  a.journal-btn:link {
+  a.inhabitant-line-btn:link {
     text-decoration: none; }
+  a.inhabitant-line-btn:hover {
+    background-color: #248a83;
+    border: 1px solid #248a83;
+    color: white; }
 
 .home-post-header {
   position: relative;
@@ -1028,7 +1033,10 @@ a.journal-btn {
     padding: 1rem; }
     .product-card .product-info h3, .product-card .product-info p {
       margin: 0;
-      color: #404040; }
+      color: #404040;
+      font-family: "Merriweather Web", sans-serif;
+      font-size: .8rem;
+      text-transform: initial; }
 
 /* Products Taxonomy*/
 .product-taxonomy-header p {
