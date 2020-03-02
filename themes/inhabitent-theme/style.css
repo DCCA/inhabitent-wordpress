@@ -321,6 +321,9 @@ ins {
 big {
   font-size: 125%; }
 
+.bold {
+  font-weight: 900; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -668,6 +671,10 @@ a {
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+
+.days-of-the-week {
+  font-weight: 900;
+  padding-right: 0.4rem; }
 
 /* Search widget. */
 .widget_search .search-submit {
