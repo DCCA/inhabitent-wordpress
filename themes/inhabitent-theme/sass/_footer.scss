@@ -23,6 +23,9 @@ footer {
         a {
           padding-right: 0.6rem;
           color: white;
+          &:hover{
+            text-decoration: underline;
+          }
         }
         a i {
           color: white;

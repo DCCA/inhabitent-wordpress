@@ -1086,7 +1086,7 @@ a.inhabitant-line-btn {
       .product-card .product-info h3::after {
         position: absolute;
         overflow: hidden;
-        content: '..................................'; }
+        content: '................................'; }
 
 /* Products Taxonomy*/
 .product-taxonomy-header p {
@@ -1231,6 +1231,8 @@ footer .site-info {
       footer .site-info .widget-footer-area .footer-area a {
         padding-right: 0.6rem;
         color: white; }
+        footer .site-info .widget-footer-area .footer-area a:hover {
+          text-decoration: underline; }
       footer .site-info .widget-footer-area .footer-area a i {
         color: white; }
   footer .site-info .footer-logo-image {

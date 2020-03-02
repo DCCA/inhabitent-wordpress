@@ -248,7 +248,6 @@ a.inhabitant-line-btn {
       font-family: $font__main;
       font-size: .8rem;
       text-transform: initial;
-      // overflow: hidden;
       background-color: white;
     }
     p{
@@ -259,7 +258,7 @@ a.inhabitant-line-btn {
       &::after{
         position: absolute;
         overflow: hidden;
-        content: '..................................';
+        content: '................................';
       }
     }
   }
