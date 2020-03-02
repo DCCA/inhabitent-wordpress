@@ -3,8 +3,9 @@
 !.gitignore
 !plugins/
 !themes/
-!uploads/
+!uploads/2020
 !README.md
+
 
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
