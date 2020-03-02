@@ -1,7 +1,7 @@
 # Inhabitent Theme
 
 <kbd>
-![Inhabitent Theme Image](/themes/inhabitent-theme/screenshot.png)
+    <img src="/themes/inhabitent-theme/screenshot.png" />
 </kbd>
 
 ## Description
