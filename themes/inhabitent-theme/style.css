@@ -769,6 +769,21 @@ a {
 .bypostauthor {
   display: block; }
 
+.comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e1e1e1; }
+  .comment-body .comment-author-avatar img {
+    border-radius: 10rem;
+    margin-right: 1rem; }
+  .comment-body .comment-content .comment-author {
+    font-weight: 900; }
+  .comment-body .comment-content .comment-metadata {
+    margin-bottom: 1rem; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -991,7 +1006,7 @@ a.inhabitant-line-btn {
   text-transform: uppercase; }
 
 .inhabitent-about-page {
-  padding-right: 2rem; }
+  padding: 0 2rem 2rem 0; }
   .inhabitent-about-page h2 {
     text-align: center; }
 

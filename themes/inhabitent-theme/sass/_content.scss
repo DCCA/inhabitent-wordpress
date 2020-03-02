@@ -38,24 +38,6 @@
   }
 }
 
-// .page-template-default,
-// .blog,
-// .post-template-default,
-// .archive,
-// .search,
-// .error404{
-//   .site-content{
-//     display: grid;
-//     grid-template-columns: 70% 30%;
-//   }
-// }
-
-// .post-type-archive-products,
-// .page-about,
-// .page-home,
-// .tax-product-taxonomy 
-// (is_page('find-us') || is_home() || is_single() || is_search() || is_archive() || is_404())
-
 .product-container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -140,4 +122,25 @@
 }
 .bypostauthor {
   display: block;
+}
+
+.comment-body{
+  display: flex;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: $border__solid;
+  .comment-author-avatar{
+    img {
+      border-radius: 10rem;
+      margin-right: 1rem;
+    }
+  }
+  .comment-content{
+    .comment-author{
+      font-weight: 900;
+    }
+    .comment-metadata{
+      margin-bottom: 1rem;
+    }
+  }
 }
