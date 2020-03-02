@@ -1,6 +1,6 @@
 # Inhabitent Theme
 
-![Inhabitent Theme Image]('./DCCA/inhabitent-wordpress/blob/master/themes/inhabitent-theme/screenshot.png')
+![Inhabitent Theme Image]('/DCCA/inhabitent-wordpress/blob/master/themes/inhabitent-theme/screenshot.png?raw=true')
 
 ## Description
 
