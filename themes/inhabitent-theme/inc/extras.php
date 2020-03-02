@@ -31,7 +31,9 @@ function inhabitent_starter_set_logo(){
 	echo '
 	<style>
 	.login h1 a{
-		background-image: url(' . get_template_directory_uri() . '/logos/inhabitent-logo-text-dark.svg);
+		background-image: url(' . get_template_directory_uri() . '/assets/logos/inhabitent-logo-text-dark.svg);
+		background-size: contain;
+		width: auto;
 	}
 	</style>';
 }
