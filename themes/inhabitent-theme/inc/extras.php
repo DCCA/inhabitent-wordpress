@@ -73,6 +73,19 @@ function inhabitent_start_set_menu_logo(){
 		';
 	} 
 
+	elseif('adventures' == get_post_type() && !is_archive()){
+		echo '
+		<style>
+		.site-branding .inhabitent-site-logo{
+			background-image: url(' . get_template_directory_uri() . '/assets/logos/inhabitent-logo-tent-white.svg);
+		}
+		.site-header{
+			background-image: url(' . get_the_post_thumbnail_url() .');
+		}
+		</style>
+		';
+	}
+
 	else{
 		echo '
 		<style>

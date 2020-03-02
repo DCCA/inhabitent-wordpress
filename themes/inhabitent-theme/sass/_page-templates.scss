@@ -7,14 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 76vh;
 }
 
 /* Front page */
-.home{
-
-}
-
 .inhabitent-logo-front-page {
   position: absolute;
   height: 30vh;
@@ -85,6 +81,64 @@
   }
 }
 
+.inhabitent-adventure-post-cards-container{
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  .inhabitent-adventure-post-cards{
+    &:nth-of-type(1){
+      grid-row: span 2;
+      a{
+        font-size: 3rem;
+      }
+      .inhabitant-line-btn{
+        font-size: .9rem;
+        color: white;
+      }
+    }
+    &:nth-of-type(2){
+      grid-column: span 2;
+      a{
+        font-size: 2.4rem;
+      }
+      .inhabitant-line-btn{
+        font-size: .9rem;
+        color: white;
+      }
+    }
+  }
+}
+
+.inhabitent-adventure-post-cards-container,
+.adventures-container {
+  .inhabitent-adventure-post-cards{
+    background-position: center;
+    background-size: cover;
+    padding: 1.5rem;
+  }
+  h2 a{
+    font-size: 1.6rem;
+    color: white;
+    font-family: $font__main;
+    font-weight: normal;
+    text-transform: initial;
+  }
+  .inhabitant-line-btn{
+    font-size: .9rem;
+    color: white;
+  }
+}
+
+.adventures-container{
+  h2 a{
+    font-size: 3rem;
+  }
+}
+
+
+
 /* Home */
 .home-content-area {
   padding: 1.5rem 1.5rem 0 0;
@@ -153,10 +207,10 @@ a.inhabitant-line-btn {
 .post-type-archive-products,
 .page-about,
 .page-home,
-.tax-product-taxonomy {
+.tax-product-taxonomy,
+.post-type-archive-adventures {
     .site-content{
     display: block;
-    grid-template-columns: 70% 30%;
   }
 }
 
@@ -297,7 +351,6 @@ a.inhabitant-line-btn {
   }
 }
 
-// TODO - add this to a button class
 .single-product-social-media{
   display: flex;
   a{
@@ -308,6 +361,22 @@ a.inhabitant-line-btn {
     &:link{
       text-decoration: none;
     }
+  }
+}
+
+// Single Adventure Post
+.adventures-template-default{
+  .site-content{
+    max-width: 800px;
+  } 
+}
+.single-adventure-info{
+  h1{
+    margin-bottom: 1rem;
+  }
+  h3{
+    font-weight: normal;
+    font-size: 1.2rem;
   }
 }
 

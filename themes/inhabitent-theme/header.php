@@ -41,6 +41,11 @@
 			</div>
 			</header><!-- #masthead -->
 			<div id="content" class='site-content container'>
+		<?php elseif ('adventures' == get_post_type() && !is_archive()) :?>
+			<div class='inhabitent-hero-banner'>
+			</div>
+			</header><!-- #masthead -->
+			<div id="content" class='site-content container'>
 		<?php elseif (is_page('about')) : ?>
 			<div class='inhabitent-hero-banner'>
 				<h1 class='about-page-title'><?php echo get_the_title() ?></h1>

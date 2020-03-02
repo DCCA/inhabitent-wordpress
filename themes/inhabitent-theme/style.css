@@ -569,9 +569,12 @@ a {
     text-transform: uppercase; }
 
 .home .main-navigation a,
+.adventures-template-default .main-navigation a,
 .page-about .main-navigation a {
+  text-shadow: 1px 1px 2px #323232;
   color: white; }
   .home .main-navigation a:hover,
+  .adventures-template-default .main-navigation a:hover,
   .page-about .main-navigation a:hover {
     color: #f0e4d1; }
 
@@ -717,6 +720,14 @@ a {
   margin-bottom: 4rem;
   padding-top: 3rem;
   border-top: 1px dashed #c8c8c8; }
+
+.adventures-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 4.5rem;
+  gap: 2rem; }
+  .adventures-container .adventure-post-wrapper {
+    height: 30rem; }
 
 .sticky {
   display: block; }
@@ -866,7 +877,7 @@ iframe {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 90vh; }
+  height: 76vh; }
 
 /* Front page */
 .inhabitent-logo-front-page {
@@ -942,6 +953,49 @@ iframe {
     .inhabitent-journal-post-cards-container .inhabitent-journal-post-cards .journal-post-wrapper {
       padding: 6%; }
 
+.inhabitent-adventure-post-cards-container {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 3rem; }
+  .inhabitent-adventure-post-cards-container .inhabitent-adventure-post-cards:nth-of-type(1) {
+    grid-row: span 2; }
+    .inhabitent-adventure-post-cards-container .inhabitent-adventure-post-cards:nth-of-type(1) a {
+      font-size: 3rem; }
+    .inhabitent-adventure-post-cards-container .inhabitent-adventure-post-cards:nth-of-type(1) .inhabitant-line-btn {
+      font-size: .9rem;
+      color: white; }
+  .inhabitent-adventure-post-cards-container .inhabitent-adventure-post-cards:nth-of-type(2) {
+    grid-column: span 2; }
+    .inhabitent-adventure-post-cards-container .inhabitent-adventure-post-cards:nth-of-type(2) a {
+      font-size: 2.4rem; }
+    .inhabitent-adventure-post-cards-container .inhabitent-adventure-post-cards:nth-of-type(2) .inhabitant-line-btn {
+      font-size: .9rem;
+      color: white; }
+
+.inhabitent-adventure-post-cards-container .inhabitent-adventure-post-cards,
+.adventures-container .inhabitent-adventure-post-cards {
+  background-position: center;
+  background-size: cover;
+  padding: 1.5rem; }
+
+.inhabitent-adventure-post-cards-container h2 a,
+.adventures-container h2 a {
+  font-size: 1.6rem;
+  color: white;
+  font-family: "Merriweather Web", sans-serif;
+  font-weight: normal;
+  text-transform: initial; }
+
+.inhabitent-adventure-post-cards-container .inhabitant-line-btn,
+.adventures-container .inhabitant-line-btn {
+  font-size: .9rem;
+  color: white; }
+
+.adventures-container h2 a {
+  font-size: 3rem; }
+
 /* Home */
 .home-content-area {
   padding: 1.5rem 1.5rem 0 0; }
@@ -999,9 +1053,9 @@ a.inhabitant-line-btn {
 .post-type-archive-products .site-content,
 .page-about .site-content,
 .page-home .site-content,
-.tax-product-taxonomy .site-content {
-  display: block;
-  grid-template-columns: 70% 30%; }
+.tax-product-taxonomy .site-content,
+.post-type-archive-adventures .site-content {
+  display: block; }
 
 .page-default {
   padding-right: 2rem; }
@@ -1144,6 +1198,16 @@ a.inhabitant-line-btn {
     color: #404040; }
     .single-product-social-media a:link {
       text-decoration: none; }
+
+.adventures-template-default .site-content {
+  max-width: 800px; }
+
+.single-adventure-info h1 {
+  margin-bottom: 1rem; }
+
+.single-adventure-info h3 {
+  font-weight: normal;
+  font-size: 1.2rem; }
 
 .search-results .page-title {
   border-bottom: 1px solid #e1e1e1; }

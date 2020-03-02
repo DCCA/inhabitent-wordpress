@@ -84,24 +84,19 @@ a {
     a {
       font-family: $font__headings;
     }
-    &:hover > a,
-    &.focus > a {
-    }
   }
   a {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
   }
-  .current_page_item > a,
-  .current-menu-item > a,
-  .current_page_ancestor > a {
-  }
 }
 
 .home,
+.adventures-template-default,
 .page-about {
   .main-navigation a{
+    text-shadow: $text-shadow__menu;
     color: white;
     &:hover {
       color: $color__brand-yellow;

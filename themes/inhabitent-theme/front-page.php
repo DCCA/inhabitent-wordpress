@@ -57,6 +57,27 @@ get_header(); ?>
 				<?php endforeach; wp_reset_postdata(); ?>     
 			</div>
 
+			<h1 class='front-page-section-title'>LATEST ADVENTURES</h1>
+			<?php
+				$args = array( 
+					'post_type'      => 'adventures', 
+					'posts_per_page'  => 4,
+					'order' => 'ASC',
+				);
+				$journal_posts = get_posts( $args ); // returns an array of posts
+			?>
+			<div class='inhabitent-adventure-post-cards-container'>
+				<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+					<div class='inhabitent-adventure-post-cards' style="background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(<?php echo get_the_post_thumbnail_url()?>)">
+					<div class="adventure-post-wrapper">
+						<h2><a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a></h2>
+						<a href="<?php echo get_permalink(); ?>" class='inhabitant-line-btn'>Read More</a>
+					</div>
+					</div>
+
+				<?php endforeach; wp_reset_postdata(); ?>     
+			</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
