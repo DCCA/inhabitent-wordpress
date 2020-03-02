@@ -1,12 +1,6 @@
 <?php
 
 /**
- * RED WordPress Widget Boilerplate
- *
- * The RED Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
- *
- * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
- *
  * @package   Contact_Widget
  * @author    Daniel Andrade <dcca12@gmail.com>
  * @license   GPL-2.0+
@@ -14,9 +8,8 @@
  * @copyright 2015 Your Name or Company Name
  *
  * @wordpress-plugin
- * Plugin Name:       Contact_Widget
- * Plugin URI:        @TODO
- * Description:       @TODO
+ * Plugin Name:       Inhabitent Theme - Contact Widget
+ * Description:       Add the contact widget to your theme.
  * Version:           1.0.0
  * Author:            DCCA
  * Author URI:        @TODO

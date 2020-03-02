@@ -1,14 +1,14 @@
 <?php
  /**
  *
- * @package   Inhabitent - Custom Functionality
+ * @package   Inhabitent Theme -  Products Custom Posts
  * @author    Daniel Andrade <dcca12@gmail.com>
  * @license   GPL-2.0+
  * @copyright 2020 Inhabitent Shop
  *
  * @wordpress-plugin
- * Plugin Name: Inhabitent - Custom Functionality
- * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
+ * Plugin Name: Inhabitent Theme - Products Custom Posts
+ * Description: This add the products area to your theme.
  * Version:     1.0.0
  * Author:      DCCA
  * Author URI:  https://github.com/DCCA
