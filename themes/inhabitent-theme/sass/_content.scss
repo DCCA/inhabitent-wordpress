@@ -42,7 +42,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 4.5rem;
   padding-top: 3rem;
   border-top: $border__dashed;
 }
@@ -51,7 +51,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 4.5rem;
+  padding-top: 3rem;
   gap: 2rem;
+  border-top: $border__dashed;
   .adventure-post-wrapper{
     height: 30rem;
   }

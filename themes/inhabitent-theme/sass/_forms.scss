@@ -12,7 +12,7 @@ input[type='submit'] {
   font-family: $font__headings;
   text-transform: uppercase;
   background-color: $color__brand-green;
-  color: white;
+  color: $color__white;
   @include font-size(0.75);
   line-height: 1;
   padding: 0.6rem 1rem 0.4rem;

@@ -64,20 +64,21 @@ get_header(); ?>
 					'posts_per_page'  => 4,
 					'order' => 'ASC',
 				);
-				$journal_posts = get_posts( $args ); // returns an array of posts
+				$adventures_posts = get_posts( $args ); // returns an array of posts
 			?>
 			<div class='inhabitent-adventure-post-cards-container'>
-				<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+				<?php foreach ( $adventures_posts as $post ) : setup_postdata( $post ); ?>
 					<div class='inhabitent-adventure-post-cards' style="background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(<?php echo get_the_post_thumbnail_url()?>)">
 					<div class="adventure-post-wrapper">
 						<h2><a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a></h2>
 						<a href="<?php echo get_permalink(); ?>" class='inhabitant-line-btn'>Read More</a>
 					</div>
 					</div>
-
 				<?php endforeach; wp_reset_postdata(); ?>     
 			</div>
-
+			<div class='archive-link-wrapper'>
+				<a  href="<?php echo get_post_type_archive_link('adventures')?>">MORE ADVENTURES</a>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

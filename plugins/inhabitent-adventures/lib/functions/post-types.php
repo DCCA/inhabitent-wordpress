@@ -10,7 +10,7 @@
 function inhabitent_cpt_adventure() {
 
 	$labels = array(
-		'name'                  => _x( 'Adventures', 'Post Type General Name', 'text_domain' ),
+		'name'                  => _x( 'Latests Adventures', 'Post Type General Name', 'text_domain' ),
 		'singular_name'         => _x( 'Adventure', 'Post Type Singular Name', 'text_domain' ),
 		'menu_name'             => __( 'Adventure', 'text_domain' ),
 		'name_admin_bar'        => __( 'Adventures Type', 'text_domain' ),

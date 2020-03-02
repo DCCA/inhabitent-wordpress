@@ -397,7 +397,7 @@ input[type='submit'] {
   font-family: "Novecento Sans Web", "Arial";
   text-transform: uppercase;
   background-color: #248a83;
-  color: white;
+  color: #fff;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
@@ -515,7 +515,7 @@ a {
     text-decoration: none;
     color: #248a83; }
   a:hover, a:focus, a:active {
-    color: #404040; }
+    color: #19625d; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -572,7 +572,7 @@ a {
 .adventures-template-default .main-navigation a,
 .page-about .main-navigation a {
   text-shadow: 1px 1px 2px #323232;
-  color: white; }
+  color: #fff; }
   .home .main-navigation a:hover,
   .adventures-template-default .main-navigation a:hover,
   .page-about .main-navigation a:hover {
@@ -717,7 +717,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 4.5rem;
   padding-top: 3rem;
   border-top: 1px dashed #c8c8c8; }
 
@@ -725,7 +725,9 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 4.5rem;
-  gap: 2rem; }
+  padding-top: 3rem;
+  gap: 2rem;
+  border-top: 1px dashed #c8c8c8; }
   .adventures-container .adventure-post-wrapper {
     height: 30rem; }
 
@@ -965,14 +967,14 @@ iframe {
       font-size: 3rem; }
     .inhabitent-adventure-post-cards-container .inhabitent-adventure-post-cards:nth-of-type(1) .inhabitant-line-btn {
       font-size: .9rem;
-      color: white; }
+      color: #fff; }
   .inhabitent-adventure-post-cards-container .inhabitent-adventure-post-cards:nth-of-type(2) {
     grid-column: span 2; }
     .inhabitent-adventure-post-cards-container .inhabitent-adventure-post-cards:nth-of-type(2) a {
       font-size: 2.4rem; }
     .inhabitent-adventure-post-cards-container .inhabitent-adventure-post-cards:nth-of-type(2) .inhabitant-line-btn {
       font-size: .9rem;
-      color: white; }
+      color: #fff; }
 
 .inhabitent-adventure-post-cards-container .inhabitent-adventure-post-cards,
 .adventures-container .inhabitent-adventure-post-cards {
@@ -983,7 +985,7 @@ iframe {
 .inhabitent-adventure-post-cards-container h2 a,
 .adventures-container h2 a {
   font-size: 1.6rem;
-  color: white;
+  color: #fff;
   font-family: "Merriweather Web", sans-serif;
   font-weight: normal;
   text-transform: initial; }
@@ -991,10 +993,26 @@ iframe {
 .inhabitent-adventure-post-cards-container .inhabitant-line-btn,
 .adventures-container .inhabitant-line-btn {
   font-size: .9rem;
-  color: white; }
+  color: #fff; }
 
 .adventures-container h2 a {
   font-size: 3rem; }
+
+.archive-link-wrapper {
+  margin-bottom: 4.5rem; }
+  .archive-link-wrapper a {
+    font-size: 1.2rem;
+    border: none;
+    font-family: "Novecento Sans Web", "Arial";
+    text-transform: uppercase;
+    background-color: #248a83;
+    line-height: 1;
+    padding: .6rem 1rem .4rem; }
+    .archive-link-wrapper a:visited {
+      color: #fff; }
+    .archive-link-wrapper a:hover {
+      background: #19625d;
+      color: #fff; }
 
 /* Home */
 .home-content-area {
@@ -1012,7 +1030,7 @@ a.inhabitant-line-btn {
   a.inhabitant-line-btn:hover {
     background-color: #248a83;
     border: 1px solid #248a83;
-    color: white; }
+    color: #fff; }
 
 .home-post-header {
   position: relative;
@@ -1030,14 +1048,14 @@ a.inhabitant-line-btn {
     background-color: #248a83;
     width: 70%; }
     .home-post-header h2 a {
-      color: white;
+      color: #fff;
       text-decoration: none; }
   .home-post-header .entry-meta {
     padding: 0 1rem;
     position: absolute;
     bottom: 0;
     right: 0;
-    color: white;
+    color: #fff;
     background-color: #248a83; }
 
 /* Pages */
@@ -1062,7 +1080,7 @@ a.inhabitant-line-btn {
 
 /* About */
 .inhabitent-hero-banner h1 {
-  color: white; }
+  color: #fff; }
 
 .about-page-title h1 {
   text-transform: uppercase; }
@@ -1156,7 +1174,7 @@ a.inhabitant-line-btn {
       font-family: "Merriweather Web", sans-serif;
       font-size: .8rem;
       text-transform: initial;
-      background-color: white; }
+      background-color: #fff; }
     .product-card .product-info p {
       padding: 1rem 1rem 1rem .4rem; }
     .product-card .product-info h3 {
@@ -1295,7 +1313,7 @@ a.inhabitant-line-btn {
 # Footer
 --------------------------------------------------------------*/
 footer .site-info {
-  color: white; }
+  color: #fff; }
   footer .site-info .widget-footer-area {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1318,11 +1336,11 @@ footer .site-info {
                 flex-direction: row; }
       footer .site-info .widget-footer-area .footer-area a {
         padding-right: 0.6rem;
-        color: white; }
+        color: #fff; }
         footer .site-info .widget-footer-area .footer-area a:hover {
           text-decoration: underline; }
       footer .site-info .widget-footer-area .footer-area a i {
-        color: white; }
+        color: #fff; }
   footer .site-info .footer-logo-image {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -1331,7 +1349,7 @@ footer .site-info {
       height: 3rem; }
   footer .site-info .inhabitent-copyright-tag {
     font-family: "Novecento Sans Web", "Arial";
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     text-align: center;
     width: 100%; }

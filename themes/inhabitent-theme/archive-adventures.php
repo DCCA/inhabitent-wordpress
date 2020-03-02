@@ -11,6 +11,15 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
+		<?php
+			$args = array( 
+				'post_type'      => 'adventures', 
+				'posts_per_page'  => 4,
+				'order' => 'ASC',
+			);
+			$adventures_posts = get_posts( $args ); // returns an array of posts
+		?>
+
 		<?php if (have_posts()) : ?>
 
 			<header class="page-header">
@@ -23,7 +32,7 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 
 			<div class="adventures-container">
-				<?php while (have_posts()) : the_post(); ?>
+				<?php foreach ( $adventures_posts as $post ) : setup_postdata( $post ); ?>
 					<div class="adventure-card">
 						<div class='inhabitent-adventure-post-cards' style="background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(<?php echo get_the_post_thumbnail_url()?>)">
 						<div class="adventure-post-wrapper">
@@ -32,7 +41,7 @@ get_header(); ?>
 						</div>
 						</div>
 					</div>
-				<?php endwhile; ?>
+				<?php endforeach; wp_reset_postdata(); ?> 
 			</div>
 
 			<?php the_posts_navigation(); ?>

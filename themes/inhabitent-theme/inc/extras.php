@@ -130,7 +130,11 @@ function inhabitent_start_remove_archive_from_title($title){
 	if('products' == get_post_type()){
 		$title = post_type_archive_title() . ' stuff';
 		return $title;
-	} else{
+	} elseif ('adventures' == get_post_type()) {
+		$title = post_type_archive_title();
+		return $title;
+	} 
+	else{
 		return $title;
 	}
 }

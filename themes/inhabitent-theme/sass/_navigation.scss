@@ -97,7 +97,7 @@ a {
 .page-about {
   .main-navigation a{
     text-shadow: $text-shadow__menu;
-    color: white;
+    color: $color__white;
     &:hover {
       color: $color__brand-yellow;
     }

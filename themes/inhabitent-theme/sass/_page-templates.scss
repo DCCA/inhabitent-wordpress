@@ -95,7 +95,7 @@
       }
       .inhabitant-line-btn{
         font-size: .9rem;
-        color: white;
+        color: $color__white;
       }
     }
     &:nth-of-type(2){
@@ -105,7 +105,7 @@
       }
       .inhabitant-line-btn{
         font-size: .9rem;
-        color: white;
+        color: $color__white;
       }
     }
   }
@@ -120,20 +120,40 @@
   }
   h2 a{
     font-size: 1.6rem;
-    color: white;
+    color: $color__white;
     font-family: $font__main;
     font-weight: normal;
     text-transform: initial;
   }
   .inhabitant-line-btn{
     font-size: .9rem;
-    color: white;
+    color: $color__white;
   }
 }
 
 .adventures-container{
   h2 a{
     font-size: 3rem;
+  }
+}
+
+.archive-link-wrapper{
+  margin-bottom: 4.5rem;
+  a{
+    font-size: 1.2rem;
+    border: none;
+    font-family: $font__headings;
+    text-transform: uppercase;
+    background-color: $color__link;
+    line-height: 1;
+    padding: .6rem 1rem .4rem;
+    &:visited{
+      color: $color__white;
+    }
+    &:hover{
+      background: $color__link-hover;
+      color: $color__white;
+    }
   }
 }
 
@@ -156,7 +176,7 @@ a.inhabitant-line-btn {
   &:hover{
     background-color: $color__background-green;
     border: $border__solid-green;
-    color: white;
+    color: $color__white;
   }
 }
 
@@ -172,7 +192,7 @@ a.inhabitant-line-btn {
   }
   h2 {
     a {
-      color: white;
+      color: $color__white;
       text-decoration: none;
     }
     padding: 0 1rem;
@@ -186,7 +206,7 @@ a.inhabitant-line-btn {
     position: absolute;
     bottom: 0;
     right: 0;
-    color: white;
+    color: $color__white;
     background-color: $color__background-green;
   }
 }
@@ -221,7 +241,7 @@ a.inhabitant-line-btn {
 /* About */
 .inhabitent-hero-banner{
   h1{
-    color: white;
+    color: $color__white;
   }
 }
 
@@ -307,7 +327,7 @@ a.inhabitant-line-btn {
       font-family: $font__main;
       font-size: .8rem;
       text-transform: initial;
-      background-color: white;
+      background-color: $color__white;
     }
     p{
       padding: 1rem 1rem 1rem .4rem;

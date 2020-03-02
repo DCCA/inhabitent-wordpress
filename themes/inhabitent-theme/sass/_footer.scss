@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 footer {
   .site-info {
-    color: white;
+    color: $color__white;
     .widget-footer-area {
       display: flex;
       i{
@@ -22,13 +22,13 @@ footer {
         }
         a {
           padding-right: 0.6rem;
-          color: white;
+          color: $color__white;
           &:hover{
             text-decoration: underline;
           }
         }
         a i {
-          color: white;
+          color: $color__white;
         }
       }
     }
@@ -41,7 +41,7 @@ footer {
     }
     .inhabitent-copyright-tag {
       font-family: $font__headings;
-      color: white;
+      color: $color__white;
       text-transform: uppercase;
       text-align: center;
       width: 100%;
