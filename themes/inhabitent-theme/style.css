@@ -568,6 +568,9 @@ a {
 .home .main-navigation a,
 .page-about .main-navigation a {
   color: white; }
+  .home .main-navigation a:hover,
+  .page-about .main-navigation a:hover {
+    color: #f0e4d1; }
 
 /* Small menu. */
 .menu-toggle,
@@ -1055,6 +1058,7 @@ a.inhabitant-line-btn {
     gap: 2rem;
     border-bottom: 0.4rem solid #e1e1e1; }
   .product-card .product-info {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1065,13 +1069,24 @@ a.inhabitant-line-btn {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 1rem; }
+    overflow: hidden; }
     .product-card .product-info h3, .product-card .product-info p {
+      padding: 1rem 1rem 1rem .4rem;
+      position: relative;
       margin: 0;
       color: #404040;
       font-family: "Merriweather Web", sans-serif;
       font-size: .8rem;
-      text-transform: initial; }
+      text-transform: initial;
+      background-color: white; }
+    .product-card .product-info p {
+      padding: 1rem 1rem 1rem .4rem; }
+    .product-card .product-info h3 {
+      padding: 1rem; }
+      .product-card .product-info h3::after {
+        position: absolute;
+        overflow: hidden;
+        content: '..................................'; }
 
 /* Products Taxonomy*/
 .product-taxonomy-header p {

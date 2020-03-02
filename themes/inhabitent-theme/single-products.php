@@ -33,9 +33,9 @@ get_header(); ?>
                         ?>
                     </div><!-- .entry-content -->
                     <div class='single-product-social-media'>
-                        <a href='#'><i class="fab fa-facebook-f"></i> Like</a>
-                        <a href='#'><i class="fab fa-twitter"></i> Twitter</a>
-                        <a href='#'><i class="fab fa-pinterest"></i> Pin</a>
+                        <a class='inhabitant-line-btn' href='#'><i class="fab fa-facebook-f"></i> Like</a>
+                        <a class='inhabitant-line-btn' href='#'><i class="fab fa-twitter"></i> Twitter</a>
+                        <a class='inhabitant-line-btn' href='#'><i class="fab fa-pinterest"></i> Pin</a>
                     </div>
                 </div>
             </article><!-- #post-## -->

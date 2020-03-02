@@ -235,17 +235,32 @@ a.inhabitant-line-btn {
     border-bottom: $border__bottom-solid;
   }
   .product-info{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem;
+    overflow: hidden;
     h3, p {
+      padding: 1rem 1rem 1rem .4rem;
+      position: relative;
       margin: 0;
       color: $color__text-main;
       font-family: $font__main;
       font-size: .8rem;
       text-transform: initial;
-
+      // overflow: hidden;
+      background-color: white;
+    }
+    p{
+      padding: 1rem 1rem 1rem .4rem;
+    }
+    h3{
+      padding: 1rem;
+      &::after{
+        position: absolute;
+        overflow: hidden;
+        content: '..................................';
+      }
     }
   }
 }
