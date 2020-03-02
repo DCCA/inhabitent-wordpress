@@ -73,7 +73,7 @@ function inhabitent_start_set_menu_logo(){
 		';
 	} 
 
-	elseif('adventures' == get_post_type() && !is_archive()){
+	elseif('adventures' == get_post_type() && !is_archive() && !is_search()){
 		echo '
 		<style>
 		.site-branding .inhabitent-site-logo{

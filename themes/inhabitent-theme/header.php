@@ -41,7 +41,7 @@
 			</div>
 			</header><!-- #masthead -->
 			<div id="content" class='site-content container'>
-		<?php elseif ('adventures' == get_post_type() && !is_archive()) :?>
+		<?php elseif ('adventures' == get_post_type() && !is_archive() && !is_search()) :?>
 			<div class='inhabitent-hero-banner'>
 			</div>
 			</header><!-- #masthead -->
