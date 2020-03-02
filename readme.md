@@ -4,8 +4,8 @@ Major issues
 - [x] Add the styles for the archive page
 
 All
-- [] Fix the if statement for the border bottom in the header
-- [] Clean the header.php file using template
+- [x] Fix the if statement for the border bottom in the header
+- [x] Clean the header.php file using template
 - [] Organize the plugins files
 - [x] Add custom fonts
 - [x] Style the footer
@@ -21,7 +21,7 @@ Front page
 - [x] Style the front-page product area
 - [x] Style the about-page
 - [x] Style the journal page
-- [] Insert the dashed line in the shop area
+- [x] Insert the dashed line in the shop area
 
 Journal Posts
 - [] Style the comments made

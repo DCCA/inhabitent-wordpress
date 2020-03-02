@@ -695,7 +695,8 @@ a {
 .search .site-content,
 .error404 .site-content,
 .archive .site-content,
-.post-template-default .site-content {
+.post-template-default .site-content,
+.blog .site-content {
   padding: 0 1.5rem; }
 
 .post-type-archive-products .site-content,
@@ -938,7 +939,7 @@ a.inhabitant-line-btn {
 
 .home-post-header {
   position: relative;
-  height: 62vh;
+  height: 30rem;
   background-position: center;
   background-size: cover; }
   .home-post-header .journal-image-link {
