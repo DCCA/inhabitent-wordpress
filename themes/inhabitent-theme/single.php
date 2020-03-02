@@ -30,7 +30,7 @@ get_header(); ?>
 					<!-- TODO: Add commas beteween the space, and trim the last one -->
 					<?php
 						$categorys = get_the_category();
-						echo '<p>POSTED IN → ';
+						echo '<p>POSTED IN &rarr; ';
 						foreach ($categorys as $category) {
 							echo '<a href=' . get_category_link($category) . '>' . $category->slug . '</a>';
 							echo ' ';
@@ -39,7 +39,7 @@ get_header(); ?>
 					?>
 					<?php
 						$tags = get_the_tags();
-						echo '<p>TAGGED IN → ';
+						echo '<p>TAGGED IN &rarr; ';
 						foreach ($tags as $tag) {
 							echo '<a href='. get_tag_link($tag) .'>' . $tag->slug. '</a>';
 							echo ' ';
