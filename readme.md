@@ -1,4 +1,6 @@
-#Inhabitent Theme
+# Inhabitent Theme
+
+![Inhabitent Theme Image]('./DCCA/inhabitent-wordpress/blob/master/themes/inhabitent-theme/screenshot.png')
 
 ## Description
 
@@ -33,7 +35,7 @@ Major issues
 All
 - [x] Fix the if statement for the border bottom in the header
 - [x] Clean the header.php file using template
-- [] Organize the plugins files
+- [x] Organize the plugins files
 - [x] Add custom fonts
 - [x] Style the footer
 
@@ -51,7 +53,7 @@ Front page
 - [x] Insert the dashed line in the shop area
 
 Journal Posts
-- [] Style the comments made
+- [x] Style the comments made
 - [x] Insert the categorys tags at the bottom of the single posts page
 
 Products
