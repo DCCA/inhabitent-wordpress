@@ -33,6 +33,8 @@ function inhabitent_starter_setup() {
 		'comment-list',
 		'gallery',
 		'caption',
+		'custom-background',
+		'custom-header',
 	) );
 
 }
