@@ -1,6 +1,8 @@
 # Inhabitent Theme
 
+<kbd>
 ![Inhabitent Theme Image](/themes/inhabitent-theme/screenshot.png)
+</kbd>
 
 ## Description
 
