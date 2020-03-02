@@ -124,6 +124,9 @@
     font-family: $font__main;
     font-weight: normal;
     text-transform: initial;
+    &:hover{
+      color:$color__brand-yellow;
+    }
   }
   .inhabitant-line-btn{
     font-size: .9rem;
@@ -134,6 +137,9 @@
 .adventures-container{
   h2 a{
     font-size: 3rem;
+    &:hover{
+      color:$color__brand-yellow;
+    }
   }
 }
 

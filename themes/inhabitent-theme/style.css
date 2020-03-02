@@ -16,6 +16,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 Inhabitent Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -986,6 +989,9 @@ iframe {
   font-family: "Merriweather Web", sans-serif;
   font-weight: normal;
   text-transform: initial; }
+  .inhabitent-adventure-post-cards-container h2 a:hover,
+  .adventures-container h2 a:hover {
+    color: #f0e4d1; }
 
 .inhabitent-adventure-post-cards-container .inhabitant-line-btn,
 .adventures-container .inhabitant-line-btn {
@@ -994,6 +1000,8 @@ iframe {
 
 .adventures-container h2 a {
   font-size: 3rem; }
+  .adventures-container h2 a:hover {
+    color: #f0e4d1; }
 
 .archive-link-wrapper {
   margin-bottom: 4.5rem; }
