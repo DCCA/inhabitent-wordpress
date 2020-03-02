@@ -27,7 +27,7 @@ get_header(); ?>
 			<?php if ( $taxonomies ) : ?>
 				<ul class="products-taxonomies-list">
 				<?php foreach ( $taxonomies  as $taxonomy ) : ?>
-					<a href="<?php echo get_term_link($taxonomy); ?>"><li><?php echo $taxonomy->name ?></li></a>
+					<li><a href="<?php echo get_term_link($taxonomy); ?>"><?php echo $taxonomy->name ?></a></li>
 				<?php endforeach; ?>
 				</ul>
 			<?php endif;?>
