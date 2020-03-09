@@ -9,4 +9,9 @@
       searchInput.classList.toggle('search-field-hidden');
       searchInput.classList.toggle('search-field-show');
     })
+    searchBtn.addEventListener('blur', event => {
+      event.preventDefault();
+      searchInput.classList.toggle('search-field-hidden');
+      searchInput.classList.toggle('search-field-show');
+    })
   })();
