@@ -153,12 +153,12 @@
     background-color: $color__link;
     line-height: 1;
     padding: .6rem 1rem .4rem;
+    color: $color__white;
     &:visited{
       color: $color__white;
     }
     &:hover{
       background: $color__link-hover;
-      color: $color__white;
     }
   }
 }

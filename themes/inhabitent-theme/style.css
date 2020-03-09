@@ -1012,12 +1012,12 @@ iframe {
     text-transform: uppercase;
     background-color: #248a83;
     line-height: 1;
-    padding: .6rem 1rem .4rem; }
+    padding: .6rem 1rem .4rem;
+    color: #fff; }
     .archive-link-wrapper a:visited {
       color: #fff; }
     .archive-link-wrapper a:hover {
-      background: #19625d;
-      color: #fff; }
+      background: #19625d; }
 
 /* Home */
 .home-content-area {
